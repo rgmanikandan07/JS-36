@@ -9,7 +9,16 @@
 </head>
 
 <body>
+
     <script>
+
+        var x = 10;
+        var y = 10;
+
+        var z = x * y;
+        console.log(z);
+
+
         // Large Numbers
 
         let a = 60;
@@ -28,13 +37,80 @@
         var sum = 0;
         var n1 = 1;
         var n2 = 2;
-
-        for (let i = 1; i <= 10; i++) {
-            sum = n1 + n2
+        for (i = 1; i < number; i++) {
+            sum = n1 + n2;
             n1 = n2;
             n2 = sum;
             console.log(sum);
         }
+
+        // Even or Odd
+
+        let n = 12;
+
+        if(n%2 === 0){
+            console.log("Even Number");
+        }
+        else{
+            console.log("Odd Number");
+        }
+
+        // Divisible of 5
+
+        let five = 15;
+        if(five%5 == 0){
+            console.log("Divisible Of 5");
+        }
+        else{
+            console.log("Not Divisible Of 5");
+        }
+
+        // Multible Table
+
+        let table = prompt("Which Table");
+        let table1 = 0;
+
+        for(i=1; i<=10; i++){
+            table1 = table*i;
+            console.log(table+"*"+i+"="+table1+"");
+        }
+
+        // Asending Order
+
+        function sortmyarray(){
+            var arr = ["1","2","3","4","5"];
+            arr.reverse();
+            console.log(arr)
+        }
+
+        // N reverse Numbers
+
+        let N = prompt("Enter Number")
+        let B = N.toString().split("").reverse().join("");
+        console.log(B);
+
+        // N even Numbers
+
+        let even = 0;
+        let NN = prompt("Enter Value");
+        // for(i=0; even<NN; i++){
+        //     even = even+2
+        // }
+        while(even < NN){
+            even = even+2;
+            console.log(even+"");
+        }
+
+        // Calculate Sum of a Number
+
+        var val = 10;
+        sum = 0;
+        while(val){
+            sum += val%2;
+            val = (val/2);
+            console.log(sum);
+        }
+
 
     </script>
 </body>
